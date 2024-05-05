@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Sign Up Form</title>
+</head>
+
+<body>
+    <main>
+        <form id="register-form" aria-labelledby="register-heading">
+
+            <h1 id="register-heading">Register</h1>
+            <p class="register-intro">Fill out this form to create a new account</p>
+            <p class="register-intro">All fields are required</p>
+
+            <label for="username">Username</label>
+            <input class="register-input" type="text" id="username" name="username" required aria-required="true"
+                autocomplete="username" aria-describedby="username-error" />
+
+            <label for="email">Email address</label>
+            <input class="register-input" type="email" id="email" name="email" required aria-required="true"
+                autocomplete="email" aria-describedby="email-error" />
+
+            <label for="password">Password</label>
+
+            <div>
+                <input class="register-input" type="password" id="password" name="password" required
+                    aria-required="true" autocomplete="new-password" aria-describedby="password-error" />
+                <span>
+                    <button type="button" aria-label="show password" aria-pressed="false" class="showPasswordButton">
+                        <img aria-hidden="true" src="/images/visibility.png" class="showPasswordEyeIcon" />
+                    </button>
+                </span>
+            </div>
+            <button class="register-submit-button" type="submit">Sign Up</button>
+        </form>
+    </main>
+</body>
+
+</html>

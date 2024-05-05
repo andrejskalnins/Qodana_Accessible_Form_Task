@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 37%, rgba(253, 29, 29, 1) 69%, rgba(252, 176, 69, 1) 100%);
+    font-family: "JetBrains Mono";
+}
+
+main {
+    margin: 0 auto;
+}
+
+#register-form {
+    padding: 1rem 3rem 3rem 4rem;
+    max-width: 16.5rem;
+    margin: 2rem auto;
+    border-radius: 1rem;
+    background: white;
+    border-top: 5px solid orange;
+}
+
+#register-heading {
+    text-shadow: 1px 1px 1px orange,
+        1px 2px 1px orange,
+        1px 3px 1px orange;
+
+}
+
+.register-intro {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.register-input {
+    margin: 0.4rem auto 1rem;
+    padding: 0.3rem;
+    font-size: 1rem;
+    border: 2px solid #333333;
+}
+
+.register-submit-button {
+    border-radius: 1rem;
+    border: none;
+    padding: 10px 24px;
+    margin: 10px auto 0;
+    width: 200px;
+    cursor: pointer;
+    background-color: rgb(252 171 67);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin: 1em 0 .1em;
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+
+.showPasswordEyeIcon {
+    height: 2.4em;
+}
+
+span {
+    vertical-align: middle;
+}
+
+input:focus,
+button:focus {
+    outline: 2px solid rgb(132, 115, 255);
+    box-shadow: 1px 1px 8px 1px rgb(132, 115, 255);
+}
+
+input:hover,
+button:hover {
+    outline: 2px solid rgb(132, 115, 255);
+    box-shadow: 1px 1px 8px 1px rgb(132, 115, 255);
+}
+
+.showPasswordButton {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: .5em;
+    height: 2.4em;
+}
+
+@media screen and (max-width: 375px) {
+
+    #register-form {
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    #register-form {
+        padding: 2rem 1rem;
+    }
+
+}
